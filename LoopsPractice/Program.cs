@@ -250,25 +250,104 @@ namespace LoopsPractice
             //ask the user if they have another class they would like to add to their GPA calculation
             //Using a do-while loop, repeat the code if the user says "YES"
 
-            string newClass;
-            string newGrade;
-            string anotherEntry;
-            do
+            //string newClass;
+            //string newGrade;
+            //string anotherEntry;
+            //do
+            //{
+            //    Console.WriteLine("What class do you want to add to your GPA calculation?");
+            //    newClass = Console.ReadLine();
+            //    Console.WriteLine("What is the letter grade for the class?");
+            //    newGrade = Console.ReadLine();
+            //    Console.WriteLine("Do you want to add another class to add to your GPA calculation? YES/NO");
+            //    anotherEntry = Console.ReadLine();
+            //}
+            //while (anotherEntry == "YES");
+
+            //break = ends loop
+            //continue = allows program to continue after pulling out a specific condition -- see slide
+
+            //NESTED LOOPS
+            //a loop inside another loop
+            //the inner loop is executed more times than the outer loop
+            //ex. a clock -- count up starting with seconds, then minutes, then hours, then day
+
+            //simple example
+            //create a nested loop structure that prints: 2 rows, 4 columns
+            //1234
+            //1234
+
+            //for(int rows = 1; rows <= 2; rows++) //i = rows, rows are not an array
+            //{
+            //    for(int columns = 1; columns <=4; columns++) //j = columns
+            //    {
+            //        Console.Write(columns); //write, not write.line to keep on same line
+            //    }
+            //    Console.WriteLine(); //empty to separate first row from second row, etc. == new line
+            //}
+
+            //columns in inner loop because 4 columns and only 2 rows
+
+            //print a triangle
+            //outer loop will go line by line
+            //the inner loop will go over different elements in the line
+            //1
+            //12
+            //123
+            //1234
+
+            //for(int rows = 1; rows <= 4; rows++)
+            //{
+            //    for(int columns = 1; columns <= 1; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //    for (int columns = 1; columns <= 2; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //    for (int columns = 1; columns <= 3; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //    for (int columns = 1; columns <= 4; columns++)
+            //    {
+            //        Console.Write(columns);
+            //    }
+            //    Console.WriteLine();
+            //    break;
+            //}
+
+            ////A CLEANER WAY TO DO THIS!!
+            //for(int rows = 1; rows <=4; rows++)
+            //{
+            //    for(int columns = 1; columns <= rows; columns++)
+            //    {
+            //        Console.WriteLine(columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //LET USER SELECT NUMBER OF ROWS
+            Console.WriteLine("How many rows to you want in your triangle?");
+            int n = int.Parse(Console.ReadLine());
+            for (int row = 1; row <= n; row++)
             {
-                Console.WriteLine("What class do you want to add to your GPA calculation?");
-                newClass = Console.ReadLine();
-                Console.WriteLine("What is the letter grade for the class?");
-                newGrade = Console.ReadLine();
-                Console.WriteLine("Do you want to add another class to add to your GPA calculation?");
-                anotherEntry = Console.ReadLine();
+                for (int col = 1; col <= row; col++)
+                {
+                    Console.Write(col + " ");
+                }
+                Console.WriteLine();
             }
-            while (anotherEntry == "YES");
 
 
 
 
-                
-            }
+
+        }
 
 
 
