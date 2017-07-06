@@ -158,6 +158,21 @@ namespace LoopsPractice
             //    Console.WriteLine(artist);
             //}
 
+            //**While Loops - when you want a chunk of code to run only if a condition is met
+            //can be used for counting (though usually counting is done with a for loop)
+            //ex. must be a certain height to ride a roller coaster (while true, do this code)
+            //While and do-while loops rely on boolean true/false to execute
+            //While something is TRUE, do this thing.
+
+            //example, playing arcade games, while you still have money, you can continue to play
+            //example, easy to understand, but less useful -- not used often
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine();
+            while (firstName.ToUpper() == "DANIEL") 
+            {
+                Console.WriteLine("Dude, you are amazing"); //infinite repeats this statement if TRUE without break;
+                break; //takes you back out of the loop
+            }
 
 
 
