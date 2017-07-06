@@ -175,40 +175,6 @@ namespace LoopsPractice
             //}
 
 
-            //HOMEWORK DO IT PROBLEM
-            //Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
-            //If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
-            //Your Lucky Number is: 3
-            //Your Lucky Number is: 5
-            //Your Lucky Number is: 7
-            //Your Lucky Number is: 11
-            //Your Lucky Number is: 15
-
-            //int[] luckyNumbers = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
-            //foreach(int matchNumber in luckyNumbers)
-            //{
-            //    if (matchNumber.Equals(3))
-            //    {
-            //        Console.WriteLine("Your lucky number is: 3");
-            //    }
-            //    else if (matchNumber.Equals(5))
-            //    {
-            //        Console.WriteLine("Your lucky number is: 5");
-            //    }
-            //    else if (matchNumber.Equals(7))
-            //    {
-            //        Console.WriteLine("Your lucky number is: 7");
-            //    }
-            //    else if (matchNumber.Equals(11))
-            //    {
-            //        Console.WriteLine("Your lucky number is: 11");
-            //    }
-            //    else if (matchNumber.Equals(15))
-            //    {
-            //        Console.WriteLine("Your lucky number is: 15");
-            //    }
-            //}
-
             //another example of while loop ex. to see if a gamer wants to continue playing game
             //Console.WriteLine("Do you want to play the game? YES/NO");
             //string playAgain = Console.ReadLine().ToUpper();
@@ -332,18 +298,99 @@ namespace LoopsPractice
             //}
 
             //LET USER SELECT NUMBER OF ROWS
-            Console.WriteLine("How many rows to you want in your triangle?");
-            int n = int.Parse(Console.ReadLine());
-            for (int row = 1; row <= n; row++)
-            {
-                for (int col = 1; col <= row; col++)
-                {
-                    Console.Write(col + " ");
-                }
-                Console.WriteLine();
-            }
+            //Console.WriteLine("How many rows to you want in your triangle?");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int row = 1; row <= n; row++)
+            //{
+            //    for (int col = 1; col <= row; col++)
+            //    {
+            //        Console.Write(col + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //DANIEL'S FIZZBUZZ
+            //Remember that in FizzBuzz, if it is not a FizzBuzz, Fizz, or Buzz number
+            //you print the number itself.
+            //Console.WriteLine("Let's Play FizzBuzz!");
+            //Console.WriteLine("Please enter your FIZZ number");
+            //int fizz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter your BUZZ number");
+            //int buzz = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What number would you like me to count to? (Pick a high one)");
+            //int endNumber = int.Parse(Console.ReadLine());
+            //for (int i = 0; i <= endNumber; i++)
+            //{
+            //    if (i % fizz == 0 && i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Fizz Buzz!");
+            //    }
+            //    else if (i % fizz == 0)
+            //    {
+            //        Console.WriteLine("Fizz!");
+            //    }
+            //    else if (i % buzz == 0)
+            //    {
+            //        Console.WriteLine("Buzz!");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
 
+            //HOMEWORK DO IT PROBLEM
+            //Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
+            //If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
+            //Your Lucky Number is: 3
+            //Your Lucky Number is: 5
+            //Your Lucky Number is: 7
+            //Your Lucky Number is: 11
+            //Your Lucky Number is: 15
+
+            //int[] luckyNumbers = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
+            //foreach(int matchNumber in luckyNumbers)
+            //{
+            //    if (matchNumber.Equals(3))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 3");
+            //    }
+            //    else if (matchNumber.Equals(5))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 5");
+            //    }
+            //    else if (matchNumber.Equals(7))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 7");
+            //    }
+            //    else if (matchNumber.Equals(11))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 11");
+            //    }
+            //    else if (matchNumber.Equals(15))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 15");
+            //    }
+            //}
+
+
+            //HOMEWORK PROBLEM #2
+            //Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
+
+            
+
+
+            //HOMEWORK PROBLEM #3
+            //Create an array of your favorite movies.Print out each movie in the list, unless the move starts with a vowel. 
+            //Hint: Research.startsWith()
+
+
+
+            //HOMEWORK #4
+            //Write a console application that asks the user for an integer. 
+            //If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.” 
+            //Keep asking them for a number (looping)until they win.
 
 
 
@@ -352,7 +399,7 @@ namespace LoopsPractice
 
 
 
-        }   
+    }   
 
     }
 
