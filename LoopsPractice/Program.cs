@@ -166,18 +166,115 @@ namespace LoopsPractice
 
             //example, playing arcade games, while you still have money, you can continue to play
             //example, easy to understand, but less useful -- not used often
-            Console.WriteLine("What is your first name?");
-            string firstName = Console.ReadLine();
-            while (firstName.ToUpper() == "DANIEL") 
+            //Console.WriteLine("What is your first name?");
+            //string firstName = Console.ReadLine();
+            //while (firstName.ToUpper() == "DANIEL") 
+            //{
+            //    Console.WriteLine("Dude, you are amazing"); //infinite repeats this statement if TRUE without break;
+            //    break; //takes you back out of the loop
+            //}
+
+
+            //HOMEWORK DO IT PROBLEM
+            //Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
+            //If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
+            //Your Lucky Number is: 3
+            //Your Lucky Number is: 5
+            //Your Lucky Number is: 7
+            //Your Lucky Number is: 11
+            //Your Lucky Number is: 15
+
+            //int[] luckyNumbers = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21 };
+            //foreach(int matchNumber in luckyNumbers)
+            //{
+            //    if (matchNumber.Equals(3))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 3");
+            //    }
+            //    else if (matchNumber.Equals(5))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 5");
+            //    }
+            //    else if (matchNumber.Equals(7))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 7");
+            //    }
+            //    else if (matchNumber.Equals(11))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 11");
+            //    }
+            //    else if (matchNumber.Equals(15))
+            //    {
+            //        Console.WriteLine("Your lucky number is: 15");
+            //    }
+            //}
+
+            //another example of while loop ex. to see if a gamer wants to continue playing game
+            //Console.WriteLine("Do you want to play the game? YES/NO");
+            //string playAgain = Console.ReadLine().ToUpper();
+            //while (playAgain == "YES")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+
+            //DO-WHILE LOOPS
+            //similar to a while loop, however the do-while loop is used when you want a chunk of code to run
+            //at least one, but repeat only if the while condition is met
+            //real life: let netflex user watch movies as long as their subscription in valid
+            //real life: try ice cream, do try ice cream once, eat again if you like it
+
+            //The structure of a do-while loop looks like this:
+            //do
+            //{
+            //    do something
+            //}
+            //while (condition);
+
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Welcome to my game!");
+            //    //let's preten the code for the game is here
+            //    Console.WriteLine("Great game!!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+            //while (playAgain == "YES");
+            //for Fortune Teller project, do-while loop for data validation such as birth month, age, etc.
+            //for Fortune Teller project, put all code in do, let user play again in while, etc. to continue game
+
+            //Practice: ask the user for the class (in school) they would like to add to their GPA calculation
+            //ask the user for the letter grade for the class (no + or -)
+            //ask the user if they have another class they would like to add to their GPA calculation
+            //Using a do-while loop, repeat the code if the user says "YES"
+
+            string newClass;
+            string newGrade;
+            string anotherEntry;
+            do
             {
-                Console.WriteLine("Dude, you are amazing"); //infinite repeats this statement if TRUE without break;
-                break; //takes you back out of the loop
+                Console.WriteLine("What class do you want to add to your GPA calculation?");
+                newClass = Console.ReadLine();
+                Console.WriteLine("What is the letter grade for the class?");
+                newGrade = Console.ReadLine();
+                Console.WriteLine("Do you want to add another class to add to your GPA calculation?");
+                anotherEntry = Console.ReadLine();
             }
+            while (anotherEntry == "YES");
+
+
+
+
+                
+            }
+
 
 
 
         }   
 
     }
-}
+
 
