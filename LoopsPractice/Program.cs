@@ -76,23 +76,23 @@ namespace LoopsPractice
             //Problem #1
             //Create an array called days with the elements Monday, Tuesday, and Wednesday.
             //Using a For Loop, print the elements of the days array.
-            string[] days = { "Monday", "Tuesday", "Wednesday" };
-            for(int i = 0; i < days.Length; i++)
-            {
-                Console.WriteLine(days[i]);
-            }
-            
+            //string[] days = { "Monday", "Tuesday", "Wednesday" };
+            //for(int i = 0; i < days.Length; i++)
+            //{
+            //    Console.WriteLine(days[i]);
+            //}
+
             //Problem #2
             //Start with the string "Once upon a time" and create an array called
             //storyWords using the Split method. Reverse the order of the elements in
             //the array and using a For Loop, print each word
-            string story = "Once upon a time";
-            string[] storyWords = story.Split();
-            Array.Reverse(storyWords); //need to know how to do this without the .Reverse method
-            for (int i = 0; i < storyWords.Length; i++)
-            {
-                Console.WriteLine(storyWords[i]);
-            }
+            //string story = "Once upon a time";
+            //string[] storyWords = story.Split();
+            //Array.Reverse(storyWords); //need to know how to do this without the .Reverse method
+            //for (int i = 0; i < storyWords.Length; i++)
+            //{
+            //    Console.WriteLine(storyWords[i]);
+            //}
 
             //Problem #3
             //Determine the product (multiplication) of 1 through 10 using a For Loop
@@ -115,6 +115,51 @@ namespace LoopsPractice
             //    product = product * numbers[1];
             //}
             //Console.WriteLine(product);
+
+            //foreach loop - used to iterate over a collection (ex. list or array)
+            //You can think of the structure of a foreach loop as the statement:
+            //for each item in the collection, do something
+            //Looks like this:
+            //foreach(datatype variable in collection)
+            //{
+            //    do something
+            //}
+
+            //Example:
+            //int[] studentGrades = { 4, 4, 3, 4, 3 };
+            //foreach(int grade in studentGrades)
+            //{
+            //    Console.WriteLine(grade);
+            //}
+
+            //Example:
+            //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "June" };
+            ////always start with the keyword foreach
+            //foreach(string month in firstMonths) //month works as a temporary variable
+            //{
+            //    Console.WriteLine(month);
+            //}
+
+            //Example:
+            //string[] calendar = { "Jan", "Dog", "Mar", "Apr", "May", "June" };
+            ////always start with the keyword foreach
+            ////foreach knows to take temporary variable and assign it to each element in the collection, one at a time
+            ////foreach loops always go from first element to last element, no breaking
+            //foreach (string month in calendar) //month works as a temporary variable
+            //{
+            //    Console.WriteLine(month);
+            //}
+
+            //create an array of 6 musicians (bands or solo artists)
+            //using a foreach loop, print each musician's name
+            //string[] musicianNames = { "Adele", "Dean Martin", "Black Stone Cherry", "Blue Edmondson", "Beth Hart", "Johnny Lang" };
+            //foreach (string artist in musicianNames)
+            //{
+            //    Console.WriteLine(artist);
+            //}
+
+
+
 
         }   
 
